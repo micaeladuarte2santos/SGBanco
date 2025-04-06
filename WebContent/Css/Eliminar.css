@@ -1,0 +1,352 @@
+@charset "ISO-8859-1";
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #34495e;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+    background-color: #34495e;
+    height: 70px;
+    width: 162.3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.encabezadoCuenta {
+    background-color: #34495e;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.mensaje-contenedor {
+    margin: 0px; /* Espaciado debajo de los botones */
+    float: none; /* Mantiene el mensaje alineado a la derecha */
+    width: auto; /* Asegura que no se encime con otros elementos */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Mensajes */
+.mensaje-accion {
+    position: relative;
+    margin: 90px auto 20px; /* Espacio debajo del encabezado */
+    padding: 15px 20px;
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde oscuro */
+    border: 1px solid #c3e6cb; /* Borde verde */
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 80%; /* Centrado y limitado en ancho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+
+.active {
+    font-size: 20px; /* Tamaño de letra */
+    color: #155724; /* Color del texto */
+    background-color: #d4edda; /* Fondo del mensaje */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Evita que ocupe toda la línea */
+}
+
+.contenido {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+address {
+    background-color: #b7b7b7;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+address:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #000080;
+    font-family: Arial, sans-serif;
+}
+
+
+.btn {
+    border: none;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #04AA6D;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background: #04AA6D;
+    color: white;
+}
+
+.cerrar-sesion {
+    background-color: red;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.cerrar-sesion:hover {
+    background-color: #ff8080;
+}
+
+.btn-volver {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;               /* Elimina el borde */
+    outline: none;               /* Quita el borde azul al enfocar */
+    color: white;                /* Color del texto */
+    background-color: blue;   /* Color de fondo */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #51a8ff;
+}
+
+.parteIzq {
+    background-color: #D6DFE6;
+    width: 25%;
+    padding: 30px;
+}
+
+.parteDer {
+    background-color: white;
+    width: 250%;
+    padding: 15px 80px;
+}
+
+
+footer {
+    /*background-color: #6688aa;*/
+    background-color: #04e18e;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.BtnModificar {
+	border: none; 
+	color: black; 
+	padding: 14px 28px; 
+	cursor: pointer; 
+	border-radius: 5px; 
+	background-color: white; 
+	border: 2px solid #883ad1;
+}
+.BtnModificar:hover { background: #883ad1; color: white; }
+    
+    
+ .btnFiltrar {
+ 	 border: none; 
+     color: black; 
+     padding: 14px 28px; 
+     cursor: pointer; 
+     border-radius: 5px; 
+     background-color: white; 
+     border: 2px solid #0080c0;
+}		
+
+.btnFiltrar:hover {
+	background: #0080c0; color: white;  
+}
+
+.columna {
+    flex: 1;
+}
+
+.info-columns {
+    display: flex;
+    margin-left: 150px;
+    gap: 1px; /* Espacio entre las columnas */
+}
+
+.columna .info-item {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final */
+    margin-bottom: 10px;
+}
+
+.columna  input[type="txt"], select {
+    margin: 0;
+    flex-grow: 1; /* Los labels tomarán el espacio restante */
+    padding: 8px;
+    margin-bottom: 10px; /* Separación de los campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.columna input[type="submit"] {
+	margin-left: 50px;
+
+}
+
+
+.columna input[type="submit"]:focus{
+    outline: none;
+    background: #0080c0; color: white;  
+}
+
+.columna label {
+    margin: 0;
+    padding-right: 50px; /* Espacio entre el texto y el label */
+    flex-basis: 50%; /* El ancho de los párrafos */
+    font-weight: bold;
+    color: #333;
+    padding-right: 50px;
+}
+
+footer.eliminarCliente {
+    /*background-color: #6688aa;*/
+    background-color: #04e18e;
+    padding: 25px;
+    width: 162.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+table.display {
+	border-collapse: collapse;
+	width: 100%;
+ }
+
+table.display th, td {
+    padding: 8px; 
+ 	text-align: center;
+  	border: 1px solid #AAAAAA; 
+  	word-wrap: break-word;
+  	white-space: normal;
+}
+
+table.display thead th {
+  font-size: 14px;
+}
+
+table.display tr:nth-child(even) { 
+	background-color: #f2f2f2;
+}
+
+table.display th {
+	background-color: #04AA6D;
+	color: white;
+}
+
+
+.btnMostrar {
+    width: 160px; /* Tamaño específico para el botón Mostrar */
+    height: 80px; /* Altura específica */
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #ff8000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnMostrar:focus {
+    outline: none; /* Quita el borde de enfoque */
+    border: 2px solid #ff8000; /* Mantén el borde naranja */
+}
+.btnMostrar:hover {
+    background-color:#ff8000;
+    color: white;  
+}
+
+.btnEliminar {
+	border: none; 
+	color: black; 
+	padding: 14px 28px; 
+	cursor: pointer; 
+	border-radius: 5px; 
+	background-color: white; 
+	border: 2px solid #883ad1;
+}
+.btnEliminar: hover { 
+	background: #883ad1; color: white; 
+}
+
+
+.info-columnss {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las dos columnas */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-left: 50px;
+    gap: 150px; /* Espaciado horizontal entre columnas */
+}
+
+.columnas {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.columnas input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Separación de los campos de entrada */
+    border-radius: 5px;
+}
+
+
+.columnas label {
+	margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+

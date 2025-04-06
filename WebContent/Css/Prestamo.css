@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+.parteIzq {
+    background-color: #D6DFE6;
+    width: 25%;
+    padding: 10px;
+}
+
+.parteDer {
+    background-color: white;
+    width: 250%;
+    padding: 15px 40px;
+}
+
+footer {
+    /*background-color: #6688aa;*/
+    background-color: #04e18e;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+table.blueTable {
+  max-width: 90%; 
+  margin: 0 auto; 
+  border-collapse: collapse;
+}
+
+table.blueTable td,
+table.blueTable th {
+  padding: 5px; 
+  text-align: left;
+  border: 1px solid #AAAAAA; 
+}
+
+table.blueTable tbody td {
+  width: 80px; 
+  font-size: 12px; 
+}
+
+table.blueTable thead th {
+    background-color: #e10071;
+    color: white;
+    font-size: 14px;
+}
+table.blueTable .btnFiltrar {
+  width: 100px;
+}
+
+table.blueTable input[type="text"],
+table.blueTable select {
+  width: 80px; 
+  font-size: 12px;
+}
+#cuotas_id thead th {
+    background-color: #e10071 !important;
+    color: white !important;
+}
+.BtnModificar {
+	border: none; 
+	color: black; 
+	padding: 14px 28px; 
+	cursor: pointer; 
+	border-radius: 5px; 
+	background-color: white; 
+	border: 2px solid #883ad1;
+}
+.BtnModificar:hover { background: #883ad1; color: white; }
+    
+    
+ .btnFiltrar {
+ 	 border: none; 
+     color: black; 
+     padding: 14px 28px; 
+     cursor: pointer; 
+     border-radius: 5px; 
+     background-color: white; 
+     border: 2px solid #0080c0;
+}		
+
+.btnFiltrar:hover {
+	background: #0080c0; color: white;  
+}

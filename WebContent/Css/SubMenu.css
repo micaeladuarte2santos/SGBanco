@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+
+.parteIzq {
+    background-color: #D6DFE6;
+    width: 23%;
+    padding: 10px;
+}
+
+.parteDer {
+    background-color: white;
+    width: 78%;
+    padding: 15px 80px;
+}
+
+.mensaje-contenedor {
+    margin-top: 20px; /* Espaciado debajo de los botones */
+    float: right; /* Mantiene el mensaje alineado a la derecha */
+    width: 100%; /* Asegura que no se encime con otros elementos */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.active {
+    font-size: 20px; /* Tamaño de letra */
+    color: #155724; /* Color del texto */
+    background-color: #d4edda; /* Fondo del mensaje */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Evita que ocupe toda la línea */
+}
+
+footer {
+    /*background-color: #6688aa;*/
+    background-color: #04e18e;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+.mostrar {
+	background-color: #4CAF50; /* Color verde cuando dice "Mostrar Información" */
+    color: white;
+}
+.ocultar {
+	background-color: #f44336; /* Color rojo cuando dice "Ocultar Información" */
+    color: white;
+}

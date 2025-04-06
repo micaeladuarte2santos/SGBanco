@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 16px;
+ 	color:white;
+	
+}
+
+body {
+  	background-color: #34495e 
+}
+
+h1{
+	font-family: serif;	
+	font-size: 50px;
+	text-align: center;
+	padding-left: 225px;
+}
+
+.menu-container{
+	display: flex;				/* Flexibilidad para alinearlo */
+    flex-direction: column;		/* lo alinea en forma de columna */
+    align-items: center;
+    background-color: #ebebeb;
+    flex: 1;
+    padding: 15px ;
+    width: 98.3%;
+}
+
+.active {
+    font-size: 20px; /* Ajusta el tamaño de la letra según sea necesario */
+    color: #155724;
+    background-color: #d4edda;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.boton { 
+	background-color: #2471a3; 		/* Color de fondo */
+    color: white; 			/* Color del texto */
+    border: none; 			/* Sin borde */
+    border-radius: 5px; 	/* Bordes redondeados */
+    cursor: pointer; 		/* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.3s; 		/* Transición suave */
+    margin: 10px 0; 		/* Espaciado entre botones */
+    height: 60px; 			/* Tamaño de alto de los botones */
+    width: 250px; 			/* Tamaño del ancho de los botones */
+}		
+.boton:hover {
+	background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    transform: translateY(-5px); /* Eleva el botón */
+}
+
+footer {
+	position: relative;
+    background-color: #04AA6D;
+    padding: 25px;
+    width: 96.8%;
+    margin-top: auto;	
+}
+
+.cerrar-sesion {
+    position: absolute;		/* le da una forma absoluta  */
+    right: 10px;			/* alinea a la derecha */
+    bottom: 10px;
+    display: flex;			/* flexibilidad para alinearlo */
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 15px 50px; 
+    border-radius: 5px;
+    text-decoration: none; 		/* Saca el sub-rallado */
+    font-weight: bold; 			/* Pone en negrita la letra */
+    transition: background-color 0.3s;
+}
+.cerrar-sesion:hover {
+    background-color: #ff3333; 		/* Color más claro al pasar el mouse */
+}
