@@ -23,4 +23,4 @@ Este proyecto es un sistema de gestión para una entidad bancaria, desarrollado 
 
 ## 🧪 Proyecto académico
 
-Este proyecto fue desarrollado con fines educativos como parte de una asignatura de la **Tecnicatura Universitaria en Programación**. No está destinado a ser utilizado en producción, pero representa una simulación realista de un sistema bancario básico.
+Este proyecto fue desarrollado con fines educativos como parte del proyecto final de la materia **Laboratorio IV** de la **Tecnicatura Universitaria en Programación**.
